@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="577.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apotech.FXMLAdminOnlyController">
+   <children>
+      <Pane layoutX="144.0" layoutY="30.0" prefHeight="68.0" prefWidth="368.0" style="-fx-background-color: #bfe5e1;" />
+      <Pane layoutX="134.0" layoutY="18.0" prefHeight="68.0" prefWidth="368.0" style="-fx-background-color: #4bc2ff;" />
+      <Label layoutX="275.0" layoutY="14.0" prefHeight="77.0" prefWidth="90.0" text="Admin Only">
+         <font>
+            <Font name="Bosk" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="tambah" layoutX="406.0" layoutY="131.0" onAction="#tambah" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Tambah" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="clear" layoutX="406.0" layoutY="197.0" onAction="#clear" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Clear" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="hapus" layoutX="406.0" layoutY="165.0" onAction="#hapus" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Hapus" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="update" layoutX="406.0" layoutY="228.0" onAction="#update" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="4.0" layoutY="559.0" text="version 1.0.0" />
+      <ImageView fitHeight="85.0" fitWidth="114.0" layoutX="48.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXTextField fx:id="nm_obat" layoutX="223.0" layoutY="140.0" />
+      <JFXTextField fx:id="harga" layoutX="223.0" layoutY="174.0" />
+      <JFXTextField fx:id="stok" layoutX="223.0" layoutY="206.0" />
+      <Label layoutX="116.0" layoutY="147.0" text="Nama Obat" />
+      <Label layoutX="116.0" layoutY="181.0" prefHeight="17.0" prefWidth="42.0" text="Harga" />
+      <Label layoutX="116.0" layoutY="213.0" text="Stok" />
+      <Separator layoutX="105.0" layoutY="273.0" prefHeight="17.0" prefWidth="411.0" />
+      <TableView fx:id="tableview" layoutX="137.0" layoutY="302.0" prefHeight="200.0" prefWidth="347.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="94.0" text="id_barang" />
+          <TableColumn fx:id="nabar" prefWidth="76.0" text="nama_barang" />
+            <TableColumn fx:id="hrgtbl" prefWidth="81.0" text="harga" />
+            <TableColumn fx:id="stoktabel" prefWidth="95.0" text="stok" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="logout" layoutX="484.0" layoutY="539.0" onAction="#logout" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Logout" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

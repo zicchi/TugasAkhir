@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apotech.FXMLUtamaController">
+   <children>
+      <Pane layoutX="140.0" layoutY="41.0" prefHeight="68.0" prefWidth="368.0" style="-fx-background-color: #bfe5e1;" />
+      <Pane layoutX="130.0" layoutY="29.0" prefHeight="68.0" prefWidth="368.0" style="-fx-background-color: #4bc2ff;" />
+      <Label layoutX="225.0" layoutY="25.0" prefHeight="77.0" prefWidth="196.0" text="We arrive to help you!">
+         <font>
+            <Font name="Bosk" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="batuk" layoutX="46.0" layoutY="260.0" onAction="#batukbtn" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Batuk" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="demam" layoutX="179.0" layoutY="260.0" onAction="#demambtn" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Demam" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="nyeri" layoutX="320.0" layoutY="260.0" onAction="#nyeribtn" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Nyeri" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="77.0" fitWidth="94.0" layoutX="59.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/BahanTA/batuk.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="94.0" layoutX="191.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/BahanTA/demam.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="77.0" fitWidth="94.0" layoutX="332.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/BahanTA/pegal.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="maag" layoutX="457.0" layoutY="260.0" onAction="#lambungbtn" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: #4bc2ff;" text="Lambung/Maag" textFill="WHITE">
+         <font>
+            <Font name="Roboto Condensed" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="77.0" fitWidth="94.0" layoutX="470.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../gambar/BahanTA/perut.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="7.0" layoutY="458.0" text="version 1.0.0" />
+      <JFXCheckBox fx:id="cbbatuk" checkedColor="#15b5dd" layoutX="40.0" layoutY="294.0" text="Rp. 20.000" />
+      <JFXTextField fx:id="jmlbtk" layoutX="46.0" layoutY="321.0" maxWidth="102.0" minWidth="102.0" prefHeight="31.0" prefWidth="102.0" promptText="        Jumlah" />
+      <JFXCheckBox fx:id="cbdemam" checkedColor="#15b5dd" layoutX="173.0" layoutY="293.0" text="Rp. 15.000" />
+      <JFXTextField fx:id="jmldemam" layoutX="179.0" layoutY="320.0" maxWidth="102.0" minWidth="102.0" prefHeight="31.0" prefWidth="102.0" promptText="        Jumlah" />
+      <JFXCheckBox fx:id="cbnyeri" checkedColor="#15b5dd" layoutX="315.0" layoutY="293.0" text="Rp. 12.500" />
+      <JFXTextField fx:id="jmlnyeri" layoutX="321.0" layoutY="320.0" maxWidth="102.0" minWidth="102.0" prefHeight="31.0" prefWidth="102.0" promptText="        Jumlah" />
+      <JFXCheckBox fx:id="cbmaag" checkedColor="#15b5dd" layoutX="454.0" layoutY="293.0" text="Rp. 5.000" />
+      <JFXTextField fx:id="jmlmaag" layoutX="460.0" layoutY="320.0" maxWidth="102.0" minWidth="102.0" prefHeight="31.0" prefWidth="102.0" promptText="        Jumlah" />
+      <JFXButton fx:id="jumlahtotal" layoutX="175.0" layoutY="366.0" onAction="#jumlahbtn" style="-fx-background-color: #15b5dd;" text="Jumlah" textFill="WHITE" />
+      <Label fx:id="total" layoutX="245.0" layoutY="370.0" text="Rp.0" />
+      <JFXButton fx:id="clear" layoutX="515.0" layoutY="363.0" onAction="#clearbtn" style="-fx-background-color: #15b5dd;" text="Clear" textFill="WHITE" />
+      <JFXButton fx:id="bayar" layoutX="175.0" layoutY="400.0" onAction="#bayarbtn" style="-fx-background-color: #15b5dd;" text="Bayar" textFill="WHITE" />
+      <JFXTextField fx:id="bayaran" layoutX="238.0" layoutY="397.0" maxWidth="102.0" minWidth="102.0" prefHeight="31.0" prefWidth="102.0" promptText="        Uang" />
+      <JFXTextField fx:id="kembalian" layoutX="174.0" layoutY="439.0" maxWidth="170.0" minWidth="102.0" prefHeight="31.0" prefWidth="170.0" promptText="               Kembalian" />
+      <JFXButton fx:id="cetak" layoutX="384.0" layoutY="395.0" onAction="#cetakbtn" prefHeight="59.0" prefWidth="91.0" style="-fx-background-color: #15b5dd;" text="Cetak Nota" textFill="WHITE" />
+   </children>
+</AnchorPane>
